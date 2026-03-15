@@ -13,17 +13,16 @@ height:60px;
 background:rgba(0,0,0,0.6);
 display:flex;
 align-items:center;
-justify-content:center; /* 让导航居中 */
+justify-content:center;
 z-index:100;
 }
 
 /* 导航菜单 */
 .navbar nav{
 display:flex;
-gap:40px; /* 链接间距 */
+gap:40px;
 }
 
-/* 导航文字 */
 .navbar a{
 color:white;
 text-decoration:none;
@@ -44,4 +43,29 @@ margin-top:60px;
 width:100%;
 height:calc(100vh - 60px);
 object-fit:cover;
+}
+
+/* 手机端适配 */
+@media (max-width:768px){
+
+.navbar{
+height:50px;
+}
+
+.navbar nav{
+gap:20px;
+}
+
+.navbar a{
+font-size:16px;
+}
+
+.hero{
+margin-top:50px;
+}
+
+.hero img{
+height:calc(100vh - 50px);
+}
+
 }
